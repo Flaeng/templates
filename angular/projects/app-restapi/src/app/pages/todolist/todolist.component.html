@@ -1,0 +1,11 @@
+<a class="button" routerLink="create"> Create Todo </a>
+<div class="list">
+  <div class="list-item" *ngFor="let item of todoItems$ | async">
+    <b>
+      {{ item.title }}
+    </b>
+    <p>
+      {{ item.description }}
+    </p>
+  </div>
+</div>

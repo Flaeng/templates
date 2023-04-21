@@ -1,0 +1,16 @@
+<a class="button" routerLink="/"> Back to list </a>
+<form [formGroup]="todo" (ngSubmit)="submitForm($event)">
+  <div class="form-group">
+    <label>
+      <span>Title</span>
+      <input type="text" formControlName="title" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label>
+      <span>Description</span>
+      <textarea formControlName="description"></textarea>
+    </label>
+  </div>
+  <lib-button class="button">Create todo</lib-button>
+</form>

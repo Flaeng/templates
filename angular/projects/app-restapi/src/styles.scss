@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+.button {
+  color: #CCC;
+  text-decoration: none;
+
+  &.button {
+    padding: 8px;
+    display: inline-block;
+  }
+
+  &:hover {
+    color: #EEE;
+  }
+}
+
+label {
+  padding: 8px;
+  display: block;
+  color: #CECECE;
+}
+input, select, textarea {
+  display: block;
+  border: 0;
+  border-radius: 4px;
+  line-height: 1.6rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
